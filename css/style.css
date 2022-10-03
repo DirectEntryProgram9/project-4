@@ -1,0 +1,92 @@
+@import url(./reset.css);
+
+* {
+    box-sizing: border-box;
+}
+.clear-fix {
+    clear: both;
+}
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: tomato;
+    width: 100%;
+    height: 60px;
+    padding-right: 6px;
+    justify-content: flex-end;
+}
+.header-text {
+    background-color: yellow;
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 22px;
+}
+.header-text>a {
+    font-size: 13px;
+    background-color: greenyellow;
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+.header-text>a:hover {
+    text-decoration: underline;
+}
+#app-selector {
+    position: relative;
+    width: 44px;
+    background-color: aquamarine;
+}
+#app-selector div {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+#app-selector div:hover {
+    cursor: pointer;
+    background-color: rgba(60,64,67,.08);
+}
+#app-selector svg {
+    background-color: yellow;
+    position: absolute;
+    fill: #5f6368;;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+}
+#sign-in-container {
+    position: relative;
+    width: 112px;
+    padding-right: 6px;
+    background-color: cadetblue;
+}
+#sign-in-container div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width: 94px;
+    height: 34px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 4px;
+}
+#sign-in-container div:hover {
+    background: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
